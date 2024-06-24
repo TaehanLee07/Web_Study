@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Table 3</title>
+</head>
+<body>
+    <table border="1" bordercolor="blue" width="500" height="300" align="center">
+        <tr>
+            <td colspan="3" style="color: white; background-color: blue; text-align: center; ">오늘의 수입/지출</td>
+        </tr>
+        
+        </tr>
+        <tr align="center" style="background-color: skyblue;">
+            <td>내용</td>
+            <td>수입</td>
+            <td>지출</td>
+        </tr>
+        <tr>
+            <td>월급1</td>
+            <td>1,000,000</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>점심값</td>
+            <td>5,000</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>부모님선물</td>
+            <td>30,000</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>부모님선물</td>
+            <td>30,000</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan="3" align="center" style="background-color: skyblue;">총계</td>
+            <td>수입</td>
+            <td>지출</td>
+        </tr>
+        <tr>
+            <td>1,000,000</td>
+            <td>35,000</td>
+        </tr>
+        <tr>
+            <td>남은돈</td>
+            <td>965,000</td>
+        </tr>
+
+    </table>
+</body>
+</html>
