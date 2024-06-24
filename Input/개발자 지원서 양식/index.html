@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    .report {
+        padding: 10px;
+    }
+
+    #input_area {
+        margin-left: 30px;
+    }
+</style>
+
+<body>
+    <div class="report" style="border: 1px solid black;">
+        <h2>프런트엔드 개발자 지원서</h2>
+        <p>HTML, CSS, JAVASCRIPT에 대한 기술적 이해와 경험이 있는 분을 찾습니다</p>
+        <hr>
+
+        <h3>개인정보</h3>
+        <div id="input_area">
+            <label for="name">이름</label>
+            <input type="text" placeholder="공백없이 입력하세요"> <br>
+        </div>
+
+        <div id="input_area">
+            <label for="phone">연락처</label>
+            <input type="tel">
+        </div>
+
+        <h3>지원분야</h3>
+        <div id="input_area">
+            <input type="radio">
+            <label for="분야1">웹 퍼블리싱</label><br>
+        </div>
+        <div id="input_area">
+            <input type="radio">
+            <label for="분야2">웹 애플리케이션 개발</label><br>
+        </div>
+        <div id="input_area">
+            <input type="radio">
+            <label for="분야3">개발 환경 개선</label>
+        </div>
+
+        <h3>지원 동기</h3>
+        <textarea placeholder="본사 지원 동기를 간략히 써 주세요." rows="5" cols="50"></textarea> <br>
+        <button>접수하기</button>
+        <button>다시쓰기</button>
+    </div>
+</body>
+
+</html>
