@@ -25,22 +25,10 @@
 
 ### 학습 자료
 
-내가 공부하면서 참고하는 자료들이야:
+공부할때 사용하는 사이트들입니다:
 
 - **W3Schools**: [HTML 튜토리얼](https://www.w3schools.com/html/)
 - **YouTube**: [다양한 강의](https://www.youtube.com/)
-
----
-
-### 공부 일정
-
-내 HTML 공부 계획이야:
-
-1. **첫 주**: HTML 기초 이해하기
-2. **둘째 주**: HTML 요소와 속성 배우기
-3. **셋째 주**: 폼과 테이블 만들기
-4. **넷째 주**: 멀티미디어 요소 추가하기
-5. **다섯째 주**: 프로젝트 만들기
 
 ---
 
@@ -60,18 +48,8 @@
 
 - **Visual Studio Code**: 코드 편집기
 - **Google Chrome DevTools**: 디버깅 도구
-- **GitHub**: 버전 관리 및 협업
-- **Figma**: 디자인 도구
+- **GitHub**: 포트폴리오
 
 ---
 
-### 연락처
-
-궁금한 점이나 도움이 필요하면 언제든 연락해!
-
-- **이메일**: myemail@example.com
-- **GitHub**: [github.com/myprofile](https://github.com/myprofile)
-
----
-
-함께 열심히 공부하자! 💪
+열심히 공부하자! 💪
