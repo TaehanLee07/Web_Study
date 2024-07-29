@@ -27,10 +27,8 @@
 
 내가 공부하면서 참고하는 자료들이야:
 
-- **MDN Web Docs**: [HTML 가이드](https://developer.mozilla.org/ko/docs/Web/HTML)
 - **W3Schools**: [HTML 튜토리얼](https://www.w3schools.com/html/)
-- **Codecademy**: [HTML 과정](https://www.codecademy.com/learn/learn-html)
-- **FreeCodeCamp**: [HTML & CSS 과정](https://www.freecodecamp.org/learn/responsive-web-design/)
+- **YouTube**: [다양한 강의](https://www.youtube.com/)
 
 ---
 
