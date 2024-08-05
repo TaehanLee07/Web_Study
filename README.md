@@ -42,6 +42,3 @@
 - **Visual Studio Code**: 코드 편집기
 - **Google Chrome DevTools**: 디버깅 도구
 - **GitHub**: 포트폴리오
-
----
-
