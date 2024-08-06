@@ -1,0 +1,121 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>see_man_tic_page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+        }
+
+        header {
+            width: 100%;
+            height: 100px;
+            line-height: 100px;
+            background-color: #333;
+        }
+
+        header h2 {
+            color: white;
+            margin-left: 20px;
+        }
+
+        header img {
+            display: inline-block;
+            color: white;
+            top: 20px;            
+            right: 15px;
+        }
+
+        nav {
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            background-color: #d1d1d1;
+        }
+
+        nav a {
+            color: #333;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #fff;
+            background-color: #333;
+        }
+
+        main {
+            width: 100%;
+            display: flex;
+        }
+
+        section {
+            width: 50%;
+            height: 300px;
+            margin: 20px;
+            padding: 15px;
+            background-color: #fff;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        aside {
+            width: 100%;
+            height: 120px;
+            background-color: #ddd;
+        }
+
+        aside h3,p {
+            padding: 7px
+        }
+
+        footer {
+            width: 100%;
+            height: 55px;
+            line-height: 55px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }        
+    </style>
+</head>
+
+<body>
+        <header>
+            <h2>시맨틱 태그 예제</h2>
+            <img src="로고이미지.png" alt="로고">
+        </header>
+        <nav>
+            <a href="#">홈</a>
+            <a href="#">서비스 소개</a>
+            <a href="#">고객 지원</a>
+        </nav>
+        <main>
+            <section>
+                <h2>서비스 소개</h2>
+                <p>저희 서비스는 다음과 같은 기능을 제공합니다.</p>
+                <ul>
+                    <li>기능 1</li>
+                    <li>기능 2</li>
+                    <li>기능 3</li>
+                </ul>
+            </section>
+            <section>
+                <h2>최근 이슈</h2>
+                <h3>제목 1</h3>
+                <p>내용 1</p>
+                <h3>제목 2</h3>
+                <p>내용 2</p>
+            </section>
+        </main>
+        <aside>
+            <h3>광고</h3>
+            <p>광고 내용</p>
+        </aside>
+
+        <footer>저작권 정보</footer>
+        <footer>연락처 정보</footer>
+</body>
+
+</html>
