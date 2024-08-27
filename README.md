@@ -39,5 +39,5 @@
 
 공부할 때 도움이 되는 도구들이야:
 - **Visual Studio Code**: 코드 편집기
-- **Google Chrome DevTools**: 디버깅 도구
+- **Google Chrome**: 실행 화면
 - **GitHub**: 포트폴리오
