@@ -23,13 +23,13 @@ localStorage를 사용하면, 브라우저에 key-value 값을 Storage에 저장
 ***
 **setItem()**
 
-localStorage에 아이템을 추가하기 위해서는 setItem() 함수를 사용합니다.
+localStorage에 아이템을 추가하기 위해서는 setItem() 함수를 사용해야한다.
 
 > window.localStorage.setItem(key, value)
 
 **getItem()**
 
-localStorage의 아이템을 읽기 위해서는 getItem() 함수를 사용합니다.
+localStorage의 아이템을 받기 위해서는 getItem() 함수를 사용해야한다.
 
 > window.localStorage.getItem(key)
 
