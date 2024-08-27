@@ -37,7 +37,8 @@ localStorage의 아이템을 읽기 위해서는 getItem() 함수를 사용합�
 // setItem
 window.localStorage.setItem('name', 'anna');window.localStorage.setItem('age', '20'); 
 // getItem
-const name = window.localStorage.getItem('name');const age = window.localStorage.getItem('age');
+const name = window.localStorage.getItem('name');
+const age = window.localStorage.getItem('age');
 // 결과 출력
 document.write(name); // anna
 document.write('<br/>');
