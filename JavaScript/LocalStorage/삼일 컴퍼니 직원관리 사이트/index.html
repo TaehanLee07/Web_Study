@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>삼일 컴퍼니 - 인사관리</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>삼일 컴퍼니 인사관리 시스템</h1>
+    </header>
+    
+    <main>
+        <section>
+            <h2>사원 목록</h2>
+            <table id="employeeTable">
+                <thead>
+                    <tr>
+                        <th>이름</th>
+                        <th>직위</th>
+                        <th>부서</th>
+                        <th>이메일</th>
+                        <th>액션</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- 사원 데이터는 여기에 JavaScript로 추가됩니다 -->
+                </tbody>
+            </table>
+            <button onclick="addEmployee()">사원 추가</button>
+        </section>
+    </main>
+
+    <!-- 사원 추가/수정 모달 -->
+    <div id="employeeModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle">사원 추가</h2>
+            <form id="employeeForm">
+                <label for="name">이름:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="position">직위:</label>
+                <select id="position" name="position" required>
+                    <option value="사원">사원</option>
+                    <option value="대리">대리</option>
+                    <option value="과장">과장</option>
+                    <option value="차장">차장</option>
+                    <option value="부장">부장</option>
+                </select>
+                
+                <label for="department">부서:</label>
+                <select id="department" name="department" required>
+                    <option value="영업부">영업부</option>
+                    <option value="인사부">인사부</option>
+                    <option value="기획부">기획부</option>
+                    <option value="재무부">재무부</option>
+                    <option value="마케팅부">마케팅부</option>
+                    <option value="개발부">개발부</option>
+                    <option value="디자인부">디자인부</option>
+                    <option value="지원부">지원부</option>
+                    <option value="법무부">법무부</option>
+                    <option value="홍보부">홍보부</option>
+                </select>
+                
+                <label for="email">이메일:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <button type="submit">저장</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
