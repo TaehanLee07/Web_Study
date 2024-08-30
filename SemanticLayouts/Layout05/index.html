@@ -1,0 +1,51 @@
+코드 입력 : 
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>si_man_틱 레이아웃</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .global_menu {
+            background-color: #d7f5ff;
+            border: 3px solid #e9c;
+            height: 100px;
+        }
+        .container {
+            display: flex;
+            height: 80vh;
+        }
+        .left_menu {
+            background-color: #ffe7d5;
+            border: 3px solid red;
+            width: 20%;
+        }
+        .contents {
+            width: 80%;
+        }
+        .article {
+            height: 60vh;
+            background-color: #e2e9ff;
+            border: 3px solid blue;
+        }
+        .comment {
+            height: calc(18vh + 7px);
+            border: 3px solid purple;
+            background-color: #ffddff;
+        }
+    </style>
+</head>
+<body>
+    <div class="global_menu">global menu</div>
+    <div class="container">
+        <div class="left_menu">left menu</div>
+        <div class="contents">
+            <div class="article">article</div>
+            <div class="comment">comment</div>
+        </div>
+    </div>
+</body>
+</html>
