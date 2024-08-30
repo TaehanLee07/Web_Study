@@ -1,3 +1,4 @@
 # 표시 화면
 ***
-![Untitled (3)](https://github.com/user-attachments/assets/55fe912c-e3d8-456c-a96a-0fab796a7299)
+![image](https://github.com/user-attachments/assets/3424fe74-d91c-4f38-87a2-f8d82d99b258)
+
