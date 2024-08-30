@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>C_man_tic_tag</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            width: 100vh;
+            height: 100px;
+            background: crimson;
+            border: 2px solid black;
+            margin-bottom: 2px;
+        }
+        .warp {
+            display: flex;
+            margin-bottom: 3px
+        }
+        aside {
+            width: 100px;
+            height: 495px;
+            padding-left: 10px;
+            background: purple;
+            border: 2px solid black;
+            border-top: calc(3px + 4px) solid   black;
+        }
+        aside nav {
+            width: 80px;
+            height: 200px;
+            background: deepskyblue;
+            border: 2px solid black;
+        }
+        main {
+            border: 1px solid black;
+            width: 900px;
+            height: 500px;
+            background: skyblue;
+            border: 2px solid black;
+            margin-left: 3px;
+        }
+        section {
+            width: 500px;
+            height: 200px;
+            background: limegreen;
+            border: 2px solid black;
+            margin: 5px;
+        }
+        footer {
+            width: 100vh;
+            height: 100px;
+            background: yellow;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <header>header</header>
+    <div class="warp">       
+        <aside>aside
+            <nav>nav</nav>
+        </aside>
+        <main>main
+            <section>section1</section>
+            <section>section2</section>
+        </main>
+    </div>
+    <footer>footer</footer>
+</body>
+</html>
