@@ -1,4 +1,4 @@
-# fieldset 태그란?
+# fieldset % legend 태그 설명:
 ***
 ```
 <fieldset> 태그는 아래 사진 처럼 요소들을 하나의 그룹으로 그룹화 해주는 태그이다. <br>
