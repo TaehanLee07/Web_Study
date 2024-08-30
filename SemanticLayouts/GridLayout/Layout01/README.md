@@ -1,3 +1,3 @@
 # 표시 화면
 ***
-![image](https://github.com/user-attachments/assets/efbc32b3-e7b0-4ac3-acb2-ce4c243732e3)
+![Untitled (4)](https://github.com/user-attachments/assets/7cf2ad0d-dc48-4351-9d2d-7aa94f128f8a)
