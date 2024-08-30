@@ -2,36 +2,86 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>box_shadow_made</title>
+    <title>씨에스에스 애니메</title>
 </head>
 <style>
-    body {
-        display: flex;
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.box {
+    margin: 100px auto ;
+    border-radius: 50%;
+    animation: circle 2s 1s infinite;   
+
+}
+.box:first-child {
+    animation-delay: 0.1s;
+    background: red;
+}
+.box:nth-child(2) {
+    animation-delay: 0.2s;
+    background: orange;
+}
+.box:nth-child(3) {
+    animation-delay: 0.3s;
+    background: yellow;
+}
+.box:nth-child(4) {
+    animation-delay: 0.4s;
+    background: lawngreen;
+}
+.box:nth-child(5) {
+    animation-delay: 0.5s;
+    background: green;
+}
+.box:nth-child(6) {
+    animation-delay: 0.6s;
+    background: blue;
+}
+.box:nth-child(7) {
+    animation-delay: 0.7s;
+    background: navy;
+}
+.box:nth-child(8) {
+    animation-delay: 0.8s;
+    background: purple;
+}
+.box:last-child {
+    background: black;
+}
+
+
+@keyframes circle {
+    0% {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+    }
+    50% {
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+    }
+    100% {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
     }
 
-    .box1 {
-        width: 300px;
-        height: 300px;
-        margin: 50px;
-        border-radius: 50px;
-        border: 4px solid black;
-        border-top: 3px solid black;
-        border-left: 3px solid black;
-        border-bottom: 7px solid black;
-        box-shadow: 5px 0 5px rgb(0, 0, 0);
-    }
-    .box2 {
-        width: 300px;
-        height: 300px;
-        margin: 50px;
-        border-radius: 50px;
-        border: 3px solid black;
-        box-shadow: 5px -10px 65px rgb(0, 0, 0);
-    }
-
+}
 </style>
 <body>
-    <div class="box1"></div>
-    <div class="box2"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>    
 </body>
 </html>
