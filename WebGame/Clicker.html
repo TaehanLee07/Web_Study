@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>간단한 클릭 게임</title>
+  <style>
+    .score {
+      font-size: 24px;
+      color: blue;
+    }
+    h1 {
+      color: green;
+    }
+    p {
+      color: red;
+    }
+    #clickButton {
+      font-size: 36px;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>간단한 클릭 게임</h1>
+  <h2>버튼을 더 많이 누른 사람이 승리합니다</h2>
+  
+  <p>점수: <span id="score" class="score">0</span></p>
+  <p>경과 시간: <span id="time" class="score">0</span>초</p>
+  <button id="startButton" onclick="startGame()">시작</button>
+  <button id="clickButton" onclick="incrementScore()" disabled>Click Me</button>
+
+  <script>
+    var score = 0;
+    var gameStarted = false;
+    var startTime;
+
+    function startGame() {
+      gameStarted = true;
+      document.getElementById("startButton").disabled = true;
+      document.getElementById("clickButton").disabled = false;
+      document.getElementById("clickButton").focus(); // 클릭 버튼에 포커스
+      startTime = 0;
+    }
+
+    function incrementScore() {
+      if (gameStarted && startTime === 0) {
+        startTime = Date.now();
+        updateTimer(); // 타이머 업데이트 시작
+      }
+      if (gameStarted) {
+        score += 1;
+        document.getElementById("score").innerHTML = score;
+      }
+    }
+
+    function updateTimer() {
+      if (gameStarted && startTime !== 0) {
+        var elapsedTime = Math.floor((Date.now() - startTime) / 1000); // 경과 시간 계산 (초)
+        document.getElementById("time").innerHTML = elapsedTime;
+        setTimeout(updateTimer, 1000); // 1초마다 타이머 업데이트
+      }
+    }
+
+    function endGame() {
+      gameStarted = false;
+      document.getElementById("startButton").disabled = false;
+      document.getElementById("clickButton").disabled = true;
+      alert("게임 종료! 최종 점수: " + score + ", 경과 시간: " + document.getElementById("time").innerHTML + "초");
+      score = 0;
+      document.getElementById("score").innerHTML = score;
+      document.getElementById("time").innerHTML = 0;
+    }
+  </script>
+</body>
+</html>
