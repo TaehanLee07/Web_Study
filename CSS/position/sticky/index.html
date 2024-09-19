@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>sticky 속성 예제</title>
+</head>
+<style>
+    body {
+        height: 1000vh;
+    }
+
+    header {
+        background-color: rgba(0,0,255, 0.7);
+        color: white;
+        padding-left: 32px;
+        position: sticky;
+        padding-top: 32px;
+        top: -32px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        display: inline-block;
+        margin: 16px;
+    }
+
+    main {
+        padding: 32px;
+    }
+    span {
+        color: red;
+        font-weight: bold;
+        letter-spacing: 3.4px;
+    }
+</style>
+
+<body>
+    <header>
+        <h1>대충 로고</h1>
+        <nav>
+            <ul>
+                <li>메뉴1</li>
+                <li>메뉴2</li>
+                <li>메뉴3</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>position: sticky</h1>
+        <p>블라블라블라 <span> position: threeday </span>라고 불리우는 또 다른 위치잡기 값이 있습니다. 이것은 다른 위치잡기보다 다소 새로운 것입니다. 이것은 기본적으로 상대
+            삼일과 사일이 혼합된 하이브리드로서, 연애 요소가 특정 임계점에(예로 3일이상 부터) 4일이 될 때까지만 연애할 수 있다가 그 뒤에는 끝나버립니다.</p>
+    </main>
+</body>
+
+</html>
