@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>absolute 속성 예시</title>
+    <style>
+        .bumo {
+            height: 600px;
+            border: 3px groove lightsalmon;
+            padding: 30px;
+            position: relative; /* 부모 요소에 relative 속성 설정 */
+        }
+
+        .jasick {
+            width: 150px;
+            height: 100px;
+            border: 3px solid red;
+            border-radius: 12px;
+            background-color: tan;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+        }
+
+        .absolute {
+            /* 부모 요소인 .bumo를 기준으로 위치가 결정된다. */
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            font-size: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="josang">
+        <div class="bumo">
+            <div class="jasick">1</div>
+            <div class="jasick absolute">어 absolute 형은 부모님을 기준으로 해~</div>
+            <div class="jasick">3</div>
+        </div>
+    </div>
+</body>
+</html>
