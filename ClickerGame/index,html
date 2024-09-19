@@ -1,0 +1,51 @@
+<!-- 코드 제출 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f0f0;
+        }
+
+        .button {
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="score">Score: <span id="score">0</span></div>
+        <button class="button" onclick="addScore()">클릭해주세요!</button>
+    </div>
+</body>
+
+<script>
+    let score = 0;
+
+    function addScore() {
+        score++;
+        document.getElementById("score").innerText = score;
+    }
+</script>
+
+</html>
