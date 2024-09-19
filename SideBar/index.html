@@ -1,0 +1,89 @@
+<!-- 코드 제출 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Sidebar</title>
+    <style>
+        .side_toggle_btn {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50px;
+            height: 100vh;
+            background-color: #ddd;
+            cursor: pointer;
+            z-index: 1;
+            transition: all 0.3s;
+        }
+
+        .side_toggle_btn:hover {
+            transition: all 0.3s;
+            border: 1px solid black;
+        }
+
+        .side_toggle_btn::before {
+            content: ">";
+            display: inline-block;
+            width: 50px;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .side_input:checked+.side_toggle_btn {
+            transform: translateX(200px);
+        }
+
+        .side_input:checked+.side_toggle_btn::before {
+            content: "<";
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 100vh;
+            background-color: #f4f4f4;
+            transform: translateX(-200px);
+            transition: transform 0.3s ease;
+            overflow: auto;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+        }
+
+        .side_input:checked~.sidebar {
+            transform: translateX(0);
+        }
+
+        .menu_box {
+            width: 200px;
+            height: 20vh;
+            line-height: 20vh;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .menu_box:hover {
+            background-color: blue;
+            border: 5px solid rgb(0, 128, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <input type="checkbox" id="side_btn" class="side_input" />
+    <label for="side_btn" class="side_toggle_btn"></label>
+    <div class="sidebar">
+        <div class="menu_box">menu1</div>
+        <div class="menu_box">menu2</div>
+        <div class="menu_box">menu3</div>
+        <div class="menu_box">menu4</div>
+        <div class="menu_box">menu5</div>
+    </div>
+</body>
+
+</html>
