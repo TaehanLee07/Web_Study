@@ -1,0 +1,46 @@
+    <!DOCTYPE html>
+    <html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>relative 속성 예시</title>
+        <style>
+            .bumo {
+                height: 600px;
+                border: 3px groove lightsalmon;
+                padding: 30px;
+            }
+
+            .jasick {
+                width: 150px;
+                height: 100px;
+                border: 3px solid red;
+                border-radius: 12px;
+                background-color: tan;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 30px;
+            }
+
+            /* 원래 본인 위치 기준으로 자리를 잡게함 */
+            .relative {
+                position: relative;
+                left: 200px;
+                top: 5px;
+                font-size: 15px;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="josang">
+            <div class="bumo">
+                <div class="jasick">1</div>
+                <div class="jasick relative">어 relative 형은 오른쪽으로 갈게~</div>
+                <div class="jasick">3</div>
+            </div>
+        </div>
+    </body>
+
+    </html>
